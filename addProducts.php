@@ -21,10 +21,7 @@
         <a href="#"><i class="fa-solid fa-envelope"></i></a>
       </div>
 
-      <div class="topbar-center">
-        <i class="fa-solid fa-truck"></i>
-        <span>FREE SHIPPING THIS WEEK! ORDER OVER ₱500</span>
-      </div>
+      
 
       <div class="topbar-right">
         <span>ENGLISH <i class="fa-solid fa-chevron-down"></i></span>
@@ -53,14 +50,14 @@
       </form>
 
       <div class="header-icons">
-        <a href="login.php" class="icon-box">
-          <i class="fa-regular fa-user"></i>
-          Login
+        <a href="notification.php" class="icon-box">
+          <i class="fa-regular fa-bell"></i>
+          Notification
         </a>
 
         <a href="register.php" class="icon-box">
-          <i class="fa-regular fa-user-plus"></i>
-          Register
+          <i class="fa-regular fa-user"></i>
+          Account
           
         </a>
 
@@ -79,7 +76,78 @@
     </div>
 
     </div>
-  </nav>
+    </nav>
+
+
+    <div class="add-product-page">
+    <div class="container">
+        <div class="add-product-card">
+        <h1 class="add-product-title">Add Product</h1>
+        <hr class="section-line">
+
+        <form class="product-form" action="" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+            <label for="product_name">Product Name:</label>
+            <input type="text" id="product_name" name="product_name" class="form-control medium-input">
+            </div>
+
+            <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" class="form-textarea"></textarea>
+            </div>
+
+            <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" class="form-control short-input" placeholder="₱">
+            </div>
+
+            <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category" class="form-select short-input">
+                <option>-- Select Category --</option>
+                <option>Food & Drinks</option>
+                <option>Clothing & Fashion</option>
+                <option>Handmade Crafts</option>
+                <option>Accessories</option>
+                <option>Souvenirs & Gifts</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <label for="stock">Stock Quantity:</label>
+            <input type="number" id="stock" name="stock" class="form-control short-input">
+            </div>
+
+            <div class="form-group">
+            <label for="image">Upload Image:</label>
+            <div class="file-upload-wrap">
+                <label for="image" class="file-upload-btn">Upload Photo</label>
+                <input type="file" id="image" name="image" hidden>
+                <span class="file-note">No file chosen</span>
+            </div>
+            </div>
+
+            <div class="submit-wrap">
+            <button type="submit" class="submit-btn">Add Product</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-left">
+            © 2025 <strong>LocalLift PH.</strong> All Rights Reserved.
+        </div>
+
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        </div>
+    </footer>
+    </div>
 
 
 
